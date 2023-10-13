@@ -1,3 +1,4 @@
+from KeyboardUtils import KeyboardUtils
 import speech_recognition
 import os
 
@@ -12,6 +13,7 @@ class AudioUtils:
     while self.spoken_text != STOP_COMMAND:
       self.listen_audio()
       self.interpret_audio_with_spoken_language()
+      KeyboardUtils.press_spoken_key(self.spoken_text)
 
   def listen_audio(self):
     with speech_recognition.Microphone() as microphone:
