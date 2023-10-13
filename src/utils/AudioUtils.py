@@ -1,7 +1,6 @@
 from .KeyboardUtils import KeyboardUtils
 import speech_recognition
 import os
-import keyboard
 
 
 class AudioUtils:
@@ -16,11 +15,11 @@ class AudioUtils:
             self.listen_audio()
             self.interpret_audio_with_spoken_language()
 
-            if(self.spoken_text == STOP_COMMAND): break
+            if self.spoken_text == STOP_COMMAND:
+                break
             else:
-              KeyboardUtils.press_spoken_key(self.spoken_text)
-              self.spoken_text = ''
-
+                KeyboardUtils.press_spoken_key(self.spoken_text)
+                self.spoken_text = ""
 
     def listen_audio(self):
         with speech_recognition.Microphone() as microphone:
