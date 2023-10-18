@@ -7,21 +7,23 @@
 
 <p align="center">
     • <a href="#descricao">Descrição</a>
+    • <a href="#acoes">Ações executadas com comandos de voz</a>
+    • <a href="#como-funciona">Como funciona</a>
     • <a href="#tecnologias">Tecnologias</a>
     • <a href="#Desenvolvedora">Desenvolvedora</a>
 </p>
 
 <h2 id="descricao">:pencil2: Descrição</h2>
-Programa que permite interagir com a mídia em reprodução, seja um vídeo ou um áudio, com o uso do microfone.
+Programa que permite interagir com a mídia em reprodução, seja um vídeo ou um áudio, com o uso do microfone. Desse modo é possível realizar ações, como pausar e pular uma música falando comandos como "pausar" e "pular" através do microfone.
 
-<h2 id="funcionalidades">:hammer: Ações executadas com comandos de voz</h2>
+<h2 id="acoes">:hammer: Ações executadas com comandos de voz</h2>
 
 - Pular mídia.
 - Pausar mídia.
 - Voltar para mídia anterior.
 - Parar a execução do programa.
 
-<h2 id="tecnologias">🗣️ Como funciona?</h2>
+<h2 id="como-funciona">🗣️ Como funciona?</h2>
 
 - Os comandos de voz que gerarão cada uma das ações citadas acima devem ser configurados num arquivo .env, as variáveis de ambientes estão indicadas no arquivo .env.example
 - No arquivo .env.example também é necessário indicar a linguagem que será usada para transmitir os comandos.
